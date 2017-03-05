@@ -6,7 +6,17 @@
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>
-        </tr>        
+        </tr>
+	<?php foreach ($categories as $category) : ?>
+	<tr>
+		<td><?php echo $category['categoryName']; ?></td>
+        	<td><form action="." method="post">
+	        <input type="hidden" name="action" value="delete">
+	        <input type="hidden" name="categoryID" value="<?php echo $category['categoryID']; ?>">
+	        <input type="submit" value="Delete"> </form></td> 
+	        <?php
+		endforeach;
+	        ?>
         <!-- add category rows here -->
     </table>
 
