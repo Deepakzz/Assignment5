@@ -21,6 +21,8 @@
     </table>
 
     <h2>Add Category</h2>
+
+    <p><a href="index.php?action=show_add_category_form">Add Category</a></p>
     <!-- add code for form here -->
 
     <p><a href="index.php?action=list_products">List Products</a></p>
