@@ -20,4 +20,12 @@ function get_category_name($category_id) {
     $category_name = $category['categoryName'];
     return $category_name;
 }
+function add_category($categoryName){
+ global $db;
+ $query = 'INSERT INTO categories_guitar1 (categoryName) VALUES (:categoryName)';
+ $statement = $db->prepare($query);
+ $statement->bindValue(':categoryName', $categoryName);
+ $statement->execute()
+ $statement->closeCursor();
+ }
 ?>
