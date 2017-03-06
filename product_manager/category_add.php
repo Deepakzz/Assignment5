@@ -12,7 +12,7 @@
     <br>
       
     <label>&nbsp;</label>
-    <input type="submit" value="Add Product" />
+    <input type="submit" value="Add Category" />
     <br>
   </form>
   <p class="last_paragraph">
