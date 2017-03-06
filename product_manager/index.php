@@ -70,6 +70,7 @@ else if ($action == 'list_categories')
         }
        else{
        add_category($categoryName);
+       header("Location: .?action=list_categories");
        }
 	       }
       ?>
