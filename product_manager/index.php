@@ -73,4 +73,14 @@ else if ($action == 'list_categories')
        header("Location: .?action=list_categories");
        }
 	       }
+       else if ($action == 'delete_category') {
+	       $categoryID = filter_input(INPUT_POST, 'categoryID', FILTER_VALIDATE_INT);
+       if ($categoryID == NULL || $categoryID == FALSE ||) {
+       $error = "Missing or incorrect category id.";
+       include('../errors/error.php');
+	} else {
+        delete_category($catedorID);
+	 header("Location:.?action=list_categories");
+	      }   
+	      } 
       ?>
