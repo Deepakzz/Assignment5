@@ -25,7 +25,7 @@ function add_category($categoryName){
  $query = 'INSERT INTO categories_guitar1 (categoryName) VALUES (:categoryName)';
  $statement = $db->prepare($query);
  $statement->bindValue(':categoryName', $categoryName);
- $statement->execute()
+ $statement->execute();
  $statement->closeCursor();
  }
 ?>
